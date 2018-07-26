@@ -1,0 +1,83 @@
+:doctype: book
+:toc:
+
+== *C Programming*
+
+=== *Section 1: Summarize the Fundamentals of Programming*
+
+* *Objective 1:*
+** 1.1 Understand what a computer program is
+** 1.2 Understand the purpose of programming languages
+** 1.3 Understand interpreted versus compiled
+
+* *Objective 2: Understand the compiling/linking process for C programs*
+** 2.1 Understand what source code is
+** 2.2 Understand what compiling/compiler is and the resulting output
+** 2.3 Understand what linking/linker is and the resulting output
+
+* *Objective 3: Describe the basic structure of a C program*
+** 3.1 Identify the only required function
+** 3.2 Identify what it typically means to `#include`
+** 3.3 Understand case-sensitivity in C
+
+* *Objective 4: Understand C syntax and semantics*
+** 4.1 Understand that expressions evaluate to a value
+** 4.2 Understand that statements have side-effects (does something)
+** 4.3 Apply operator precedence in expression evaluation
+
+* *Objective 5: Understand the C data types*
+** 5.1 Evaluate data types based on size/purpose
+** 5.2 Understand the `sizeof` operator
+** 5.3 Understand enums
+** 5.4 Understand void
+
+
+=== *Section 2: Understand control flow and algorithms*
+
+* *Objective 6: Language Features - Preprocessor*
+** 6.1 Understand text replacement using preprocessor directives
+** 6.2 Understand conditional compilation
+** 6.3 Understand macros
+
+* *Objective 7: Language Features - Flow Control*
+** 7.1 Understand logical operations
+** 7.2 Understand branches and loops
+
+* *Objective 8: Language Features - Functions*
+** 8.1 Understand the call stack and automatic storage
+** 8.2 Understand function signatures
+** 8.3 Understand pass-by-value
+
+
+=== *Section 3: Apply arrays, pointers, and strings*
+
+* *Objective 9: Language Features - Arrays and Pointers*
+** 9.1 Understand arrays
+** 9.2 Understand pointers
+
+* *Objective 10: Language Features - Memory*
+** 10.1 Apply dynamic (heap) memory allocation and deallocation
+** 10.2 Understand buffer overflows (the programming error, not exploit)
+
+* *Objective 11: Language Features - Strings*
+** 11.1 Understand literals and null terminated arrays of characters
+** 11.2 Understand escape sequences
+** 11.3 Apply string functions in `string.h`.
+
+
+=== *Section 4: Data Structures*
+
+* *Objective 12: Language Features - Data Structures*
+** 12.1 Understand composite data types (`struct`, `union`)
+** 12.2 Understand the memory layout of structs and Unions
+** 12.3 Understand the member access operators (`.`, `->`)
+
+
+=== *Section 5: Understand input and output data*
+
+* *Objective 13: Language Features - Input/Output*
+** 13.1 Understand standard streams (`stdin`, `stdout`, `stderr`)
+** 13.2 Understand user input/output (`printf`, `scanf`, etc.)
+** 13.3 Understand file input/output (`FILE*`, `fopen`, `fclose`, etc.)
+** 13.4 Understand command line arguments (`main(int args, char** argv)``)
+** 13.5 Apply input validation
