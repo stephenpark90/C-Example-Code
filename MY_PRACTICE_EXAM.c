@@ -95,6 +95,28 @@ int practice_q2(int **array, int arrayLen, int key)
   return -1;
 }
 
+/* INSTRUCTOR'S METHOD
+int practice_q2 (int **array, int arrayLen, int key)
+{
+
+  int sum;
+  int count = 0;
+
+
+  for (int i = 0; i < arrayLen; i++)
+    {
+
+      if (**(array + i) == key) //step 1
+	{
+	  sum = array[i][0] + array[i][1] + array[i][2]; //step2
+	  return sum;
+	}
+     }
+
+  return -1; //step 3
+}
+*/
+
 #endif //SUPPRESS_PRACTICE_QUESTION_2
 
 
