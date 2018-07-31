@@ -3,8 +3,6 @@
 int exam_q2(int **list, size_t listLen, int key)
 {
   //Add your code here
-	int value;
-
   for (int i = 0; i < listLen; i++)
   {
     if(list[i][0] == key)
@@ -115,8 +113,8 @@ void *exam_q3()
 
 int exam_q4(const char *path, const int lineNumber, char *buffer)
 {
-  char temp[101]; //create a temporary array and account for null terminator
-  int lineread = 1; //line you are reading
+  char temp[101]; //create a temporary buffer (array to hold stuff). 101 is accounting for null terminator
+  int lineread = 1; //line you are reading; start at 1
 
   FILE *fp = fopen(path, "r"); //open the file from path
 
@@ -151,7 +149,7 @@ int exam_q5()
 {
   char input[65]; //since we read 64 bytes, we need 65 to account for null terminator
 
-	while(fgets(input, sizeof(input), stdin) != NULL);
+	fgets(input, sizeof(input), stdin) != NULL);
 	if(strstr(input,"ERROR "))
 	{
 	fputs(input, stderr);
@@ -168,6 +166,7 @@ int exam_q5()
 int exam_q5()
 {
   char buffer[65];   //create buffer of 65 since we read 64 bytes and need to account for null terminator
+
   fgets(buffer, sizeof(buffer), stdin);   //automatically inserts new line at the end. no while loop
   if(strstr(buffer, "ERROR ") == buffer)  //this checks to see if "ERROR " is located at beginning
   {
@@ -247,7 +246,7 @@ void exam_q7(int *leftPtr, int *rightPtr)
 	*leftPtr = *rightPtr;
 	*rightPtr = temp;
 
-	printf("int leftside = %d\nint rightside = %d", leftPtr, rightPtr);
+	printf("int leftside = %d\nint rightside = %d", leftPtr, rightPtr); //this is just to check your answer
 }
 
 
@@ -307,8 +306,6 @@ static int cmpint(const void *p1, const void *p2)
 {
   return *((int*)p1) - *((int*)p2); 
 }
-
-
 void exam_q9(int *intList, size_t listLen)
 {
 
@@ -316,7 +313,7 @@ void exam_q9(int *intList, size_t listLen)
   return; //dont need to include this return since the return type is void
 }
 
-/*
+/*My method 
 void exam_q9(int *intList, size_t listLen)
 {
   //Add your code here
